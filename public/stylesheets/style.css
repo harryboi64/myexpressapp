@@ -1,0 +1,10 @@
+.flex-example {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+}
+
+
+.flex-item:not(:last-child) {
+  margin-right: 16px;
+}

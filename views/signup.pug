@@ -10,8 +10,13 @@ block content
       a(href='http://localhost:3000/') Login/Create Account
       a(href='http://localhost:3000/signup') Signup
   body
-    .container2
-      h2 hell yea dog
+    form(action='/signup/api/createUser' method='post')
+      input(type='text' placeholder='name' name='name')
+      input(type='text' placeholder='quote' name='quote')
+      input(type='text' placeholder='password' name='password')
+      input(type='text' placeholder='password' name='password')
+      button(type='submit') Submit
+      
   footer
     .bottom-container
       .row
@@ -19,3 +24,4 @@ block content
           .a(href='#' style='color:white') Sign up
         .col
           a(href='#' style='color:white') Forgot password?
+  

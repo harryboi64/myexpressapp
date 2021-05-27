@@ -1,0 +1,18 @@
+extends layout
+block content
+    head
+        meta(charset='UTF-8')
+        meta(name='viewport' content='width=device-width, initial-scale=1.0' Content-Type= 'image/png')
+        link(rel='stylesheet' href='stylesheets/style.css')
+    .navigation
+        a(href='http://localhost:3000/home') Home
+        a(href='http://localhost:3000/myprofile') My Profile
+        a(href='http://localhost:3000/post') Post
+        a(href='http://localhost:3000/signup') Signup
+    title Image Uploading
+    Body
+        form(action='/imagePage/upload' method='POST' enctype="multipart/form-data")
+            label(for='image') Upload Image
+            input(type='file' id='image' name='file' value='' required='')
+            button(type='submit') Submit
+                

@@ -5,11 +5,12 @@ block content
     meta(name='viewport' content='width=device-width, initial-scale=1')
     link(rel='stylesheet' href='stylesheets/style.css')
     .navigation
-      a(href='http://localhost:3000/myprofile') My Profile
+      a(href='http://localhost:3000/home') Home
       a(href='http://localhost:3000/post') Post
-      a(href='http://localhost:3000/') Login/Create Account
+      a(href='http://localhost:3000/login') Login
       a(href='http://localhost:3000/signup') Signup
   body
+    form(action='/api/myprofile' method='GET')
     .container2
       h2 hell yea dog
   footer

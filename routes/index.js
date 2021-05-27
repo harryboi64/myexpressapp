@@ -6,4 +6,9 @@ router.get('/', function(req, res, next) {
   res.render('index', { title: 'Express' });
 });
 
+// Image page, move to own router file later
+router.get('/viewImagePage', (req, res) => {
+  res.render('viewImagePage');
+});
+
 module.exports = router;

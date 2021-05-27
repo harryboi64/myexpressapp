@@ -1,0 +1,56 @@
+extends layout
+block content
+  head
+    meta(charset='utf-8')
+    meta(name='viewport' content='width=device-width, initial-scale=1')
+    link(rel='stylesheet' href='stylesheets/style.css')
+    .navigation
+      a(href='http://localhost:3000/myprofile') My Profile
+      a(href='http://localhost:3000/post') Post
+      a(href='http://localhost:3000/login') Login
+      a(href='http://localhost:3000/signup') Signup
+  body
+    form(action='/api/dashboard' method='GET')
+    style.
+      div.gallery {
+      margin: 5px;
+      border: 1px solid #ccc;
+      float: left;
+      width: 180px;
+      }
+      div.gallery:hover {
+      border: 1px solid #777;
+      }
+      div.gallery img {
+      width: 100%;
+      height: auto;
+      }
+      div.desc {
+      padding: 15px;
+      text-align: center;
+      }
+  .container2  
+    .gallery
+      a
+        img(src='https://www.wallpapersun.com/wp-content/uploads/2020/12/Trippie-Redd-Wallpaper-13.jpg' alt='Cinque Terre' width='600' height='400')
+      .desc Add a description of the image here
+    .gallery
+      a
+        img(src='img_forest.jpg' alt='Forest' width='600' height='400')
+      .desc Add a description of the image here
+    .gallery
+      a
+        img(src='img_lights.jpg' alt='Northern Lights' width='600' height='400')
+      .desc Add a description of the image here
+    .gallery
+      a
+        img(src='img_mountains.jpg' alt='Mountains' width='600' height='400')
+      .desc Add a description of the image here
+  footer
+    .bottom-container
+      .row
+        .col
+          .a(href='#' style='color:white') Sign up
+        .col
+          a(href='#' style='color:white') Forgot password?
+  

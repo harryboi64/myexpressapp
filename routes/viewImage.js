@@ -12,13 +12,6 @@ require('dotenv/config');
 const image = require('./imagemodel');
 const { ImATeapot } = require('http-errors');
 
-
-
-/* GET imagePage page. */
-//router.get('/', function (req, res, next) {
-//res.render('viewImage', { title: 'images' });
-//});
-
 router.get('/', (req, res) => {
   image.findOne({}, (err, item) => {
     console.log(item);
@@ -32,7 +25,6 @@ router.get('/', (req, res) => {
 });
 
 router.get('/feed', (req, res) => {
-  //image.find({}, { "any": 1, _id: 0 })
   image.find({}, function (err, imageDocuments) {
     if (err) {
       console.log(err);

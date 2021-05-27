@@ -11,4 +11,8 @@ router.get('/viewImagePage', (req, res) => {
   res.render('viewImagePage');
 });
 
+router.get('/feed', (req, res) => {
+  res.render('feed');
+});
+
 module.exports = router;

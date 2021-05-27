@@ -73,3 +73,14 @@
     color: white;
 }
 
+/* Image feed */
+
+.image-feed-container {
+  margin: auto;
+  width: 75%;
+  text-align: center;
+  border: 2px solid grey;
+  border-radius: 8px;
+  background-color: #ebedeb;
+}
+
